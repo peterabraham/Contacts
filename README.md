@@ -8,25 +8,34 @@ Contacts App is a cross-platform contact management application created for the 
 1.	Install [PostgreSQL](https://www.postgresql.org/docs/current/tutorial-install.html) on a platform of your choice.
 
 2.	Start PostgreSQL and start psql with default user.
+```
 psql -U postgres
-
+```
 3.	Create a user with password.
-`CREATE USER peter WITH PASSWORD 'pabraham' CREATEDB;`
+```
+CREATE USER peter WITH PASSWORD 'pabraham' CREATEDB;
+```
 
 4.	Create a database for Contacts app.
-`CREATE DATABASE contactdb OWNER peter;`
+```
+CREATE DATABASE contactdb OWNER peter;
+```
 
 5.	On next startup onwards, you can use following command to directly open psql with the database of your choice.
-`psql -U peter -d contactdb`
+```
+psql -U peter -d contactdb
+```
 
 6.	Create ‘contacts’ table.
-`CREATE TABLE contacts (
+```
+CREATE TABLE contacts (
 	contactid text PRIMARY KEY,
 	firstname text,
 	lastname text,
 	phone begint,
 	email text,
-); `
+);
+```
 
 The identifiers used in the aforementioned examples are the exact ones used when author created the app. You can change the user, database or table name as per your preference. When changed, make sure that you make the corresponding changes to the connection string and table name in the python code as well (Database.py).
 
@@ -36,7 +45,9 @@ This python app interacts with the Postgres database using SQLAlchemy ORM. The a
 •	pip install SQLAlchemy
 
 Run the app using following command:
-`Python3 ContactsServer.py`
+```
+Python3 ContactsServer.py
+```
 
 ### ContactsGUIClient:
 
