@@ -29,11 +29,11 @@ psql -U peter -d contactdb
 6.	Create ‘contacts’ table.
 ```
 CREATE TABLE contacts (
-	contactid text PRIMARY KEY,
-	firstname text,
-	lastname text,
+	contactid TEXT PRIMARY KEY,
+	firstname TEXT NOT NULL,
+	lastname TEXT,
 	phone bigint,
-	email text,
+	email TEXT,
 );
 ```
 
