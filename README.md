@@ -33,7 +33,7 @@ CREATE TABLE contacts (
 	firstname TEXT NOT NULL,
 	lastname TEXT,
 	phone bigint,
-	email TEXT,
+	email TEXT
 );
 ```
 
