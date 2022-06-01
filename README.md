@@ -41,8 +41,10 @@ The identifiers used in the aforementioned examples are the exact ones used when
 
 ### ContactServer:
 This python app interacts with the Postgres database using SQLAlchemy ORM. The application uses python3 and following dependencies are required to run this app:
-•	pip install pyzmq
-•	pip install SQLAlchemy
+```
+pip install pyzmq
+pip install SQLAlchemy
+```
 
 Run the app using following command:
 ```
