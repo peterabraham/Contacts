@@ -32,7 +32,7 @@ CREATE TABLE contacts (
 	contactid text PRIMARY KEY,
 	firstname text,
 	lastname text,
-	phone begint,
+	phone bigint,
 	email text,
 );
 ```
